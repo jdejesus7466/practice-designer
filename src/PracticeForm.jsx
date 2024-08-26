@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PracticeList from "./SetList";
+import TotalDistance from "./TotalDistance";
 
 const PracticeForm = () => {
   const [reps, setReps] = useState("");
@@ -52,6 +53,7 @@ const PracticeForm = () => {
         <button type="submit">Add Set</button>
       </form>
       <PracticeList practices={practices} />
+      <TotalDistance practices={practices} />
     </div>
   );
 };
