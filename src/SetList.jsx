@@ -1,13 +1,14 @@
 import React from "react";
+import "./SetList.css";
 
 const SetList = ({ practices }) => {
   return (
     <div>
-      <h2>Set List</h2>
+      <h2>Practice Sets</h2>
       <ul>
         {practices.map((practice, index) => (
           <li key={index}>
-            {practice.reps}x{practice.distance}m {practice.stroke} - {practice.rounds} rounds
+            {practice.reps}x{practice.distance}m {practice.stroke} - {practice.rounds} rounds ({practice.type})
           </li>
         ))}
       </ul>

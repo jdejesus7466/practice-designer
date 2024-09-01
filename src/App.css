@@ -1,23 +1,35 @@
+/* Root container styling */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333;
+  font-family: 'Arial', sans-serif;
 }
 
+/* Logo styling with rounded shape and shadow */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Blue shadow on hover for the logo */
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #007bffaa);
 }
+
+/* React logo with a special blue shadow on hover */
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Spinning animation for the React logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -27,16 +39,38 @@
   }
 }
 
+/* Spin animation for the React logo when reduced motion is not preferred */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
+/* Card styling with rounded corners, shadow, and margin */
 .card {
   padding: 2em;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
 }
 
+/* Styling for the documentation text */
 .read-the-docs {
-  color: #888;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Link styling with transition effect */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Darker blue on hover for links */
+a:hover {
+  color: #0056b3;
 }

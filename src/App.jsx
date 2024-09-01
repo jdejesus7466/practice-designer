@@ -1,5 +1,5 @@
 import React from "react";
-import PracticeForm from "./PracticeForm";
+import PracticeForm from "./PracticeForm/PracticeForm";
 
 function App() {
   return (
