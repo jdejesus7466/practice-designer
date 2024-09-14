@@ -1,5 +1,4 @@
 import React from "react";
-import "./TotalDistance.css";
 
 const TotalDistance = ({ practices }) => {
   const totalDistance = practices.reduce((acc, practice) => {

@@ -3,10 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Adjusted color scheme */
+  
   color-scheme: light dark;
-  color: #333333; /* Dark text color for better readability */
-  background-color: #f0f8ff; /* Light blue background for consistency */
+  color: #333333; 
+  background-color: #f0f8ff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,38 +14,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Link styling with transition */
+
 a {
   font-weight: 500;
-  color: #007bff; /* Blue color for links */
-  text-decoration: none; /* Remove underline for a cleaner look */
+  color: #007bff; 
+  text-decoration: none; 
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #0056b3; 
 }
 
-/* Body styling */
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
   min-width: 320px;
   min-height: 100vh;
-  background-color: #f0f8ff; /* Light blue background */
-  color: #333333; /* Dark text for better readability */
+  background-color: #f0f8ff; 
+  color: #333333; 
 }
 
-/* Heading styling */
+
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  color: #007bff; /* Blue heading color */
+  color: #007bff; 
   margin-bottom: 20px;
+  text-align: center; 
+  width: 100%; 
 }
 
-/* Button styling */
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -53,14 +58,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #007bff; /* Blue background for buttons */
-  color: #ffffff; /* White text for contrast */
+  background-color: #007bff; 
+  color: #ffffff; 
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
 button:focus,
@@ -68,19 +73,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Light mode adjustments */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547; /* Darker text color for light mode */
-    background-color: #ffffff; /* White background for light mode */
+    color: #213547;
+    background-color: #ffffff; 
   }
   
   a:hover {
-    color: #747bff; /* Light blue on hover for light mode */
+    color: #747bff;
   }
   
   button {
-    background-color: #007bff; /* Maintain blue button color */
-    border-color: #0056b3; /* Darker blue border on hover */
+    background-color: #007bff;
+    border-color: #0056b3; 
   }
 }
